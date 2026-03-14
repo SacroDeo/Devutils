@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { tools } from "@/lib/tools";
 
-const BASE_URL = "https://devutils.vercel.app";
+const BASE_URL = "https://devutilsonline.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const toolRoutes = tools.map(t => ({
