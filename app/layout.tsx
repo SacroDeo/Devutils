@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Fast, free, client-side developer tools. JSON, Base64, UUID, JWT, Regex, Password, Minifiers and more.",
   metadataBase: new URL("https://devutilsonline.in"),
   verification: {
-    google: "aa96eaff0c45de8f",
-  },
+  google: "bCNceldTZ0lUxmXc6-v9xInZ_JdZL7IySc3bVZgM_M0",
+},
   openGraph: {
     type: "website",
     siteName: "DevUtils",
