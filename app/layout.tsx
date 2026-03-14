@@ -7,7 +7,10 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: { default: "DevUtils – Developer Utilities", template: "%s | DevUtils" },
   description: "Fast, free, client-side developer tools. JSON, Base64, UUID, JWT, Regex, Password, Minifiers and more.",
-  metadataBase: new URL("https://devutils.vercel.app"),
+  metadataBase: new URL("https://devutilsonline.in"),
+  verification: {
+    google: "aa96eaff0c45de8f",
+  },
   openGraph: {
     type: "website",
     siteName: "DevUtils",
