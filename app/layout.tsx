@@ -3,14 +3,15 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: { default: "DevUtils – Developer Utilities", template: "%s | DevUtils" },
   description: "Fast, free, client-side developer tools. JSON, Base64, UUID, JWT, Regex, Password, Minifiers and more.",
   metadataBase: new URL("https://devutilsonline.in"),
   verification: {
-  google: "bCNceldTZ0lUxmXc6-v9xInZ_JdZL7IySc3bVZgM_M0",
-},
+    google: "bCNceldTZ0lUxmXc6-v9xInZ_JdZL7IySc3bVZgM_M0",
+  },
   openGraph: {
     type: "website",
     siteName: "DevUtils",
@@ -59,6 +60,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QFDMH47XZ7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QFDMH47XZ7');
+          `}
+        </Script>
         <ThemeProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />
