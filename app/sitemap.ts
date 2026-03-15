@@ -15,6 +15,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "json-format-guide",
     "password-security-guide",
     "base64-explained",
+    "how-to-format-json-javascript",
+    "what-is-uuid",
+    "sha256-vs-sha512",
+    "what-is-regex",
+    "what-is-a-slug",
   ].map(slug => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: new Date(),

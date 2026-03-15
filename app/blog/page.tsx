@@ -7,27 +7,14 @@ export const metadata: Metadata = {
 };
 
 const posts = [
-  {
-    slug: "json-format-guide",
-    title: "JSON Formatting Guide",
-    description: "Learn how to format and validate JSON correctly with examples.",
-    category: "Developer",
-    readTime: "3 min read",
-  },
-  {
-    slug: "password-security-guide",
-    title: "Password Security Guide",
-    description: "Learn how to create and manage strong passwords using entropy.",
-    category: "Security",
-    readTime: "4 min read",
-  },
-  {
-    slug: "base64-explained",
-    title: "Base64 Explained",
-    description: "Understand what Base64 encoding is and when to use it.",
-    category: "Developer",
-    readTime: "3 min read",
-  },
+  { slug: "json-format-guide", title: "JSON Formatting Guide", description: "Learn how to format and validate JSON correctly with examples.", category: "Developer", readTime: "3 min read" },
+  { slug: "password-security-guide", title: "Password Security Guide", description: "Learn how to create and manage strong passwords using entropy.", category: "Security", readTime: "4 min read" },
+  { slug: "base64-explained", title: "Base64 Explained", description: "Understand what Base64 encoding is and when to use it.", category: "Developer", readTime: "3 min read" },
+  { slug: "how-to-format-json-javascript", title: "How to Format JSON in JavaScript", description: "Format and prettify JSON in JavaScript using JSON.stringify with examples.", category: "Developer", readTime: "4 min read" },
+  { slug: "what-is-uuid", title: "What is a UUID and How to Generate One", description: "Learn what UUIDs are, the difference between v1 v4 v5, and how to generate them.", category: "Developer", readTime: "4 min read" },
+  { slug: "sha256-vs-sha512", title: "SHA-256 vs SHA-512 – Which Should You Use?", description: "Compare SHA-256 and SHA-512 hashing algorithms and learn when to use each.", category: "Security", readTime: "5 min read" },
+  { slug: "what-is-regex", title: "What is Regex – Regular Expressions Explained", description: "Learn regex syntax, common patterns, and how to test regular expressions.", category: "Developer", readTime: "6 min read" },
+  { slug: "what-is-a-slug", title: "What is a URL Slug and Why Does It Matter for SEO", description: "Learn what URL slugs are and best practices for SEO-friendly slugs.", category: "Web", readTime: "4 min read" },
 ];
 
 export default function BlogPage() {
@@ -50,19 +37,11 @@ export default function BlogPage() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-mono text-accent bg-accent/10 border border-accent/20 px-2 py-0.5 rounded-full">
-                    {post.category}
-                  </span>
-                  <span className="text-xs font-mono text-light-sub dark:text-cosmos-sub">
-                    {post.readTime}
-                  </span>
+                  <span className="text-xs font-mono text-accent bg-accent/10 border border-accent/20 px-2 py-0.5 rounded-full">{post.category}</span>
+                  <span className="text-xs font-mono text-light-sub dark:text-cosmos-sub">{post.readTime}</span>
                 </div>
-                <h2 className="font-display text-xl font-bold text-light-text dark:text-cosmos-text group-hover:text-accent transition-colors mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-light-sub dark:text-cosmos-sub text-sm leading-relaxed">
-                  {post.description}
-                </p>
+                <h2 className="font-display text-xl font-bold text-light-text dark:text-cosmos-text group-hover:text-accent transition-colors mb-2">{post.title}</h2>
+                <p className="text-light-sub dark:text-cosmos-sub text-sm leading-relaxed">{post.description}</p>
               </div>
               <span className="text-light-sub dark:text-cosmos-sub group-hover:text-accent transition-colors text-xl mt-1">→</span>
             </div>
