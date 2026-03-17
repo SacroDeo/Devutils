@@ -17,6 +17,7 @@ export const tools: Tool[] = [
   { slug: "regex-tester", name: "Regex Tester", description: "Test regular expressions with live matching", icon: ".*", category: "Developer" },
   // Security
   { slug: "password-generator", name: "Password Generator", description: "Generate strong passwords with entropy analysis", icon: "🛡️", category: "Security" },
+  { slug: "password-entropy", name: "Password Entropy Checker", description: "Check the strength and entropy of a password", icon: "📊", category: "Security" },
   { slug: "hash-generator", name: "Hash Generator", description: "Generate SHA-1, SHA-256 and SHA-512 hashes", icon: "#", category: "Security" },
   // Web
   { slug: "html-minifier", name: "HTML Minifier", description: "Removes extra whitespace and comments. Not a replacement for build tools.", icon: "</>", category: "Web" },

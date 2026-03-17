@@ -34,8 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-6 border-t border-light-border dark:border-cosmos-border flex flex-col sm:flex-row justify-between gap-2 text-xs text-light-sub dark:text-cosmos-sub">
-          <p>© {new Date().getFullYear()} DevUtils. All tools run client-side.</p>
-          <p className="font-mono">0 bytes sent to servers</p>
+        <p>© {new Date().getFullYear()} DevUtils. All rights reserved.</p>
         </div>
       </div>
     </footer>
