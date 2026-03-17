@@ -241,10 +241,10 @@ export default function Home() {
 
           {/* headline */}
           <h1 className="font-display font-bold tracking-tight mb-6 mx-auto max-w-5xl">
-            <span className="block text-5xl sm:text-6xl xl:text-8xl text-light-text dark:text-cosmos-text leading-[1.0]">
+            <span className="block text-5xl sm:text-6xl xl:text-8xl text-light-text dark:text-cosmos-text leading-[1.2]">
               Every dev tool
             </span>
-            <span className="block text-5xl sm:text-6xl xl:text-8xl animate-gradient-text leading-[1.1] mt-2">
+            <span className="block text-5xl sm:text-6xl xl:text-8xl animate-gradient-text leading-[1.3] mt-1 pb-4">
               you actually need.
             </span>
           </h1>
